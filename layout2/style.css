@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #0f1a17;
+    color: white;
+    font-family: sans-serif;
+    padding: 10px;
+  }
+  
+  /* Elementos semânticos com borda para visualização */
+  header, nav, main, section, article, aside, footer {
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  header {
+    border: 2px solid green;
+  }
+  
+  nav {
+    border: 2px solid yellow;
+    padding: 5px;
+    background-color: #222;
+  }
+  
+  /* Grid principal do layout */
+  main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+    border: 2px solid green;
+    padding: 10px;
+  }
+  
+  /* Container da esquerda com Flexbox em coluna */
+  .primary-section {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid yellow;
+    margin-bottom: 10px;
+  }
+  
+  .primary-section h2 {
+    margin-bottom: 10px;
+  }
+  
+  .primary-section article {
+    border: 2px solid blue;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Seção secundária abaixo da principal (dentro da mesma coluna) */
+  .secondary-section {
+    border: 2px solid yellow;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Coluna direita: aside com Flexbox em coluna */
+  aside {
+    border: 2px solid yellow;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  aside section {
+    border: 2px solid blue;
+    margin-top: 10px;
+    padding: 5px;
+  }
+  
+  footer {
+    border: 2px solid green;
+    text-align: center;
+    padding: 10px;
+  }
