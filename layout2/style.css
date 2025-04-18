@@ -11,7 +11,6 @@
     padding: 10px;
   }
   
-  /* Elementos semânticos com borda para visualização */
   header, nav, main, section, article, aside, footer {
     margin-bottom: 10px;
     padding: 10px;
@@ -27,7 +26,6 @@
     background-color: #222;
   }
   
-  /* Grid principal do layout */
   main {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -36,7 +34,6 @@
     padding: 10px;
   }
   
-  /* Container da esquerda com Flexbox em coluna */
   .primary-section {
     display: flex;
     flex-direction: column;
@@ -54,14 +51,12 @@
     margin-bottom: 10px;
   }
   
-  /* Seção secundária abaixo da principal (dentro da mesma coluna) */
   .secondary-section {
     border: 2px solid yellow;
     padding: 10px;
     margin-top: 10px;
   }
   
-  /* Coluna direita: aside com Flexbox em coluna */
   aside {
     border: 2px solid yellow;
     display: flex;
